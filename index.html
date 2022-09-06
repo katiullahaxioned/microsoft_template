@@ -1,53 +1,104 @@
 <!doctype html>
-
-<!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
-
+<html lang="en">
 <head>
- 
   <meta charset="utf-8">
-
-  <title>Client</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
-
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <title>Microsoft Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
-
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
-
 <body>
   <!--container start-->
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="header-top">
+        <div class="wrapper">
+          <h1 class="logo">
+            <a href="index.html" title="Microsoft">
+              <img src="assets/images/logo.png" alt="microsoft">
+            </a>
+          </h1>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="Microsoft 365">microsoft 365</a>
+              </li>
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="Azure">azure</a>
+              </li>
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="Office 365">office 365</a>
+              </li>
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="Dynamics 365">dynamics 365</a>
+              </li>
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="SQL">sql</a>
+              </li>
+              <li class="nav-menu-list">
+                <a href="#FIXME" title="Windows 10">windows 10</a>
+              </li>
+              <li class="nav-menu-list">
+                <div class="nav-more">
+                  <a href="#FIXME" title="More">more</a>
+                  <span class="caret">caret</span>
+                </div>
+                <ul class="nav-submenu">
+                  <li class="nav-submenu-list">
+                    <a href="#FIXME" title="Sub List 1">sub list 1</a>
+                  </li>
+                  <li class="nav-submenu-list">
+                    <a href="#FIXME" title="Sub List 2">sub list 2</a>
+                  </li>
+                  <li class="nav-submenu-list">
+                    <a href="#FIXME" title="Sub List 3">sub list 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <form action="#FIXME" method="get" name="headerForm" class="header-form">
+            <div class="input-group">
+              <input type="text" name="search" placeholder="search..." autocomplete="off">
+            </div>
+            <div class="input-control">
+              <button type="button" class="search-button">search</button>
+            </div>
+          </form>
+          <div class="cart-box">
+            <span class="cart-list">cart</span>
+          </div>
+          <div class="menu-toggle">
+            <span class="bar">bar</span>
+            <span class="bar">bar</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="wrapper">
+          <span class="enterprise">enterprise</span>
+          <ul class="header-bottom-menu">
+            <li>
+              <a href="#FIXME" title="Solutions by Industry">solutions by industry</a>
+              <span class="caret">caret</span>
+            </li>
+            <li>
+              <a href="#FIXME" title="Public Sector">public sector</a>
+              <span class="caret">caret</span>
+            </li>
+            <li>
+              <a href="#FIXME" title="Customer Stories">customer stories</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Events">events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--header section end-->
     <!--main section start-->
@@ -57,15 +108,12 @@
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
-
-<!-- <script src="assets/vendor/jquery-1.8.3.min.js"></script>
-<script src="assets/js/script.js"></script> -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
