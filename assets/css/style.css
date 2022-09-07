@@ -151,7 +151,6 @@ button {
   align-items: center;
   gap: 48px;
   position: relative;
-  background-color: darkgray;
 }
 
 .nav-menu {
@@ -364,7 +363,70 @@ button {
 
 /* header-top section ends here */
 
+.header-bottom {
+  background-color: var(--clr-blue1);
+}
 
+.header-bottom .wrapper {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-bottom .enterprise {
+  color: var(--clr-white);
+  font-size: 24px;
+}
+
+.header-bottom-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  text-transform: capitalize;
+}
+
+.header-bottom-menu > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.header-bottom-menu a {
+  color: var(--clr-white);
+}
+
+.header-bottom-menu .caret {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  color: var(--clr-white);
+  font-size: 10px;
+  text-indent: -99999px;
+  transition: all .3s;
+}
+
+.header-bottom-menu .caret::before {
+  content: '\f078';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
+
+.header-bottom-menu a:hover,
+.header-bottom-menu a:hover ~ .caret {
+  color: var(--clr-blue4);
+}
+
+.header-bottom-menu .caret.active {
+  color: var(--clr-blue4);
+  transform: rotate(180deg);
+}
 
 /* header-top section ends here */
 
