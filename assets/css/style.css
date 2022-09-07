@@ -133,6 +133,8 @@ button {
   text-transform: uppercase;
 }
 
+p { line-height: 1.5; }
+
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
@@ -438,12 +440,123 @@ button {
   main styling starts here
 =================================*/
 
+/* banner section starts here */
+
+.banner .wrapper {
+  width: 100%;
+  height: 522px;
+  position: relative;
+  background: rgba(4, 3, 78, .5);
+}
+
+.banner figure,
+.banner figure img {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.banner-content {
+  width: 51%;
+  position: absolute;
+  top: 108px;
+  left: 12.7%;
+  color: var(--clr-white);
+}
+
+.banner-heading {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.banner-content p {
+  margin: 14px 0 12px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.banner-content .comment-person {
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.banner-button a {
+  padding: 6px 10px;
+  border: 3px solid var(--clr-white);
+  margin-top: 22px;
+  color: var(--clr-white);
+  letter-spacing: 1px;
+}
+
+.banner-button a:hover {
+  color: var(--clr-blue4);
+  background-color: var(--clr-white);
+}
+
+.banner-button a::before {
+  content: '\f144';
+  margin-right: 8px;
+  font-size: 55px;
+  font-family: 'fontAwesome';
+  vertical-align: middle;
+}
+
+.banner .active-page {
+  padding: 7px 8px;
+  position: absolute;
+  top: 15px;
+  left: 5%;
+  background-color: var(--clr-offWhite);
+  color: var(--clr-grey);
+  font-size: 15px;
+  text-transform: capitalize;
+  word-spacing: 1px;
+}
+
+.banner-sales-support {
+  padding: 14px 10px;
+  display: flex;
+  gap: 28px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--clr-black);
+}
+
+.banner-sales-support a {
+  color: var(--clr-white);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.banner-sales-support a::before {
+  margin-right: 3px;
+  font-family: 'fontAwesome';
+
+}
+
+.banner-sales-support li:first-child a::before {
+  content: '\f095';
+  font-size: 23px;
+  vertical-align: middle;
+}
+
+.banner-sales-support li:last-child a::before {
+  content: '\f003';
+  font-size: 16px;
+  vertical-align: text-top;
+}
+
+.banner-sales-support a:hover { color: var(--clr-blue1); }
+
+/* banner section ends here */
+
+/* first-post section starts here */
 
 
 
-
-
-
+/* first-post section ends here */
 
 /*=================================
   main styling ends here
