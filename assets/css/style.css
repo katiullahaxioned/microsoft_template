@@ -739,6 +739,91 @@ p { line-height: 1.5; }
 
 /* resources section ends here */
 
+/* contact-us section starts here */
+
+.contact-us {
+  position: relative;
+  background-color: var(--clr-blue1);
+}
+
+.contact-us::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: var(--clr-blue4);
+}
+
+.contact-us .wrapper {
+  width: 74.5%;
+  padding: 65px 0 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-left,
+.contact-us-right {
+  flex-basis: 50%;
+  z-index: 2;
+}
+
+.contact-us-right { padding: 0 0 0 10.5%; }
+
+.contact-us li {
+  margin: 10px 0;
+  display: block;
+}
+
+.contact-us li a {
+  color: var(--clr-white);
+  font-size: 18px;
+  line-height: 1.5;
+  word-spacing: 1px;
+}
+
+.contact-us li a:hover { opacity: .6; }
+
+.contact-us-left a::before {
+  margin-right: 18px;
+  font-size: 20px;
+  font-family: 'fontAwesome';
+}
+
+.contact-us-left li:nth-child(1) a::before {
+  content: '\f019';
+}
+
+.contact-us-left li:nth-child(2) a::before {
+  content: '\f1c0';
+  margin-right: 19px;
+}
+
+.contact-us-left li:nth-child(3) a::before {
+  content: '\f053';
+  margin-right: 22px;
+}
+
+.contact-us-right a::before {
+  margin-right: 4px;
+  font-family: 'fontAwesome';
+}
+
+.contact-us-right li:nth-child(1) a::before {
+  content: '\f095';
+  font-size: 25px;
+}
+
+.contact-us-right li:nth-child(2) a::before {
+  content: '\f003';
+  font-size: 18px;
+}
+
+/* contact-us section ends here */
+
 /*=================================
   main styling ends here
 =================================*/
