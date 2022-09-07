@@ -159,7 +159,7 @@ p { line-height: 1.5; }
 
 .section-learn-more a::after {
   content: '\f105';
-  margin-left: 10px;
+  margin-left: 12px;
   font-size: 20px;
   font-family: 'fontAwesome';
 }
@@ -605,6 +605,67 @@ p { line-height: 1.5; }
 .first-post a { line-height: 1.5; }
 
 /* first-post section ends here */
+
+/* transform-product section starts here */
+
+.transform-product .wrapper {
+  width: 74.5%;
+  padding: 82px 0 79px;
+}
+
+.transform-list li {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--clr-grey);
+  padding: 26px 0;
+}
+
+.transform-list li:last-child {
+  border-bottom: 1px solid var(--clr-grey);
+}
+
+.transform-list .list-left {
+  flex-basis: 58%;
+  display: flex;
+  gap: 22px;
+}
+
+.transform-list .list-logo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  color: var(--clr-blue1);
+  font-size: 50px;
+  text-indent: -99999px;
+}
+
+.transform-list .list-logo::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
+
+.transform-list li:nth-child(1) .list-logo::before {
+  content: '\f0c0';
+}
+.transform-list li:nth-child(2) .list-logo::before {
+  content: '\f07d';
+}
+.transform-list li:nth-child(3) .list-logo::before {
+  content: '\f140';
+}
+.transform-list li:nth-child(4) .list-logo::before {
+  content: '\f00a';
+}
+
+.transform-list figure {
+  flex-shrink: 0;
+}
+
+/* transform-product section ends here */
 
 /*=================================
   main styling ends here
