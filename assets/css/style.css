@@ -150,9 +150,8 @@ p { line-height: 1.5; }
   color: var(--clr-grey2);
 }
 
-.section-learn-more a {
-  color: var(--clr-blue1);
-}
+.section-learn-more a { color: var(--clr-blue1); }
+.section-learn-more a.active { color: var(--clr-blue4); }
 
 .section-caret {
   width: 20px;
@@ -182,6 +181,7 @@ p { line-height: 1.5; }
 
 .section-caret.active {
   transform: rotate(270deg);
+  transition: all .3s;
 }
 
 .resource-person,
@@ -190,7 +190,9 @@ p { line-height: 1.5; }
   text-transform: capitalize;
 }
 
+.caret { overflow: hidden; }
 .resource-person { margin: 10px 0 17px; }
+html.overflow-hidden { overflow: hidden; }
 
 /* common styling ends here */
 
@@ -223,6 +225,7 @@ p { line-height: 1.5; }
 
 .nav-menu a { color: var(--clr-black); }
 .nav-menu a[title="SQL"] { text-transform: uppercase; }
+.nav-menu a.active { color: var(--clr-blue2); }
 
 .nav-menu .nav-more {
   display: flex;
@@ -439,9 +442,8 @@ p { line-height: 1.5; }
   gap: 3px;
 }
 
-.header-bottom-menu a {
-  color: var(--clr-white);
-}
+.header-bottom-menu a { color: var(--clr-white); }
+.header-bottom-menu a.active { color: var(--clr-black); }
 
 .header-bottom-menu .caret {
   width: 10px;
@@ -1174,6 +1176,15 @@ p { line-height: 1.5; }
   /* common styling ends here */
 
   /* header-top section starts here */
+
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background-color: var(--clr-white);
+    box-shadow: 0 1px 5px var(--clr-grey);
+  }
 
   .header-top .wrapper {
     height: 8vh;
