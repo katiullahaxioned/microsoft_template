@@ -31,6 +31,7 @@ learnMoreButton.forEach(function(learnMore){
     
     if(learnMorePara.classList.contains('learn-more-para')) {
       learnMorePara.classList.toggle('active');
+      e.target.classList.toggle('active');
       
       if(learnMorePara.classList.contains('active')) {
         e.target.innerHTML = 'learn less<span class="section-caret">caret</span>';
